@@ -1,0 +1,13 @@
+[package]
+name = "memdata"
+version = "0.1.0"
+authors = ["Armin Ronacher <armin.ronacher@active-4.com>"]
+
+[dependencies]
+owning_ref = "0.3"
+memmap = { version = "0.5", optional = true }
+num-traits = "0.1"
+
+[features]
+default = ["with_mmap"]
+with_mmap = ["memmap"]
